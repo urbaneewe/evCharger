@@ -26,3 +26,7 @@ final class User {
         self.isAdmin = isAdmin
     }
 }
+
+class UserSession: ObservableObject {
+    @Published var loggedInUser: User?
+}

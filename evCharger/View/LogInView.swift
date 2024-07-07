@@ -13,31 +13,42 @@ struct LoginView: View {
 
     @State private var email: String = ""
     @State private var name: String = ""
+    @StateObject private var userSession = UserSession()
 
     @State private var path = NavigationPath()
 
     enum Destination: Hashable {
             case adminDashboard
-            case otherView
+            case mainDashboard
         }
 
     var body: some View {
         NavigationStack(path: $path) {
             VStack {
                 TextField("Email", text: $email)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding()
+                    .background(Color(.systemGray6))
+                    .cornerRadius(5.0)
+                    .padding(.bottom, 20)
+                    .autocapitalization(.none)
+                    .keyboardType(.emailAddress)
 
                 TextField("Name", text: $name)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding()
+                    .background(Color(.systemGray6))
+                    .cornerRadius(5.0)
+                    .padding(.bottom, 20)
+                    .autocapitalization(.none)
+                    .keyboardType(.default)
 
                 Button("Login") {
                     if let user = users.first(where: { $0.email == email && $0.name == name }) {
+                        userSession.loggedInUser = user
+
                         if user.isAdmin {
                             path.append(Destination.adminDashboard)
                         } else {
-                            path.append(Destination.otherView)
+                            path.append(Destination.mainDashboard)
                         }
                     }
                 }
@@ -48,13 +59,15 @@ struct LoginView: View {
                 .background(Color.blue)
                 .cornerRadius(15.0)
             }
+            .padding()
             .navigationTitle("Login")
             .navigationDestination(for: Destination.self) { destination in
                 switch destination {
                 case .adminDashboard:
                     AdminDashboardView()
-                case .otherView:
-                    SignUpView()
+                case .mainDashboard:
+                    MainDashboardView()
+                        .environmentObject(userSession)
                 }
             }
         }
