@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct BookChargingView: View {
-    @Environment(\.managedObjectContext) private var viewContext
+    @Environment(\.modelContext) private var viewContext
     var charger: Charger
 
     var body: some View {
