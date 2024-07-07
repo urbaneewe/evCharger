@@ -18,8 +18,6 @@
 		87D62DB12C347B3F004EA466 /* ChargerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D62DB02C347B3F004EA466 /* ChargerDetailView.swift */; };
 		87D62DB32C347B4F004EA466 /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D62DB22C347B4F004EA466 /* UserDetailView.swift */; };
 		87E3DEA02C330E38004D0139 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E3DE9F2C330E38004D0139 /* User.swift */; };
-		87E3DEA42C330F6F004D0139 /* AdminViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E3DEA32C330F6F004D0139 /* AdminViewModel.swift */; };
-		87E3DEA62C330F9A004D0139 /* CarOwnerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E3DEA52C330F9A004D0139 /* CarOwnerViewModel.swift */; };
 		87E3DEA82C332083004D0139 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E3DEA72C332083004D0139 /* SignUpView.swift */; };
 		87E830052C3AB11000F927A3 /* MainDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E830042C3AB11000F927A3 /* MainDashboardView.swift */; };
 		87E830072C3ABBA800F927A3 /* HaversineFormula.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E830062C3ABBA800F927A3 /* HaversineFormula.swift */; };
@@ -39,8 +37,6 @@
 		87D62DB02C347B3F004EA466 /* ChargerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargerDetailView.swift; sourceTree = "<group>"; };
 		87D62DB22C347B4F004EA466 /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
 		87E3DE9F2C330E38004D0139 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		87E3DEA32C330F6F004D0139 /* AdminViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminViewModel.swift; sourceTree = "<group>"; };
-		87E3DEA52C330F9A004D0139 /* CarOwnerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarOwnerViewModel.swift; sourceTree = "<group>"; };
 		87E3DEA72C332083004D0139 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		87E830042C3AB11000F927A3 /* MainDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDashboardView.swift; sourceTree = "<group>"; };
 		87E830062C3ABBA800F927A3 /* HaversineFormula.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HaversineFormula.swift; sourceTree = "<group>"; };
@@ -68,15 +64,6 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		8708FE5F2C3475180003D072 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				87E3DEA32C330F6F004D0139 /* AdminViewModel.swift */,
-				87E3DEA52C330F9A004D0139 /* CarOwnerViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		87BFAE372C21CF7D0049C8A5 = {
 			isa = PBXGroup;
 			children = (
@@ -97,7 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				87D62DA92C34757F004EA466 /* View */,
-				8708FE5F2C3475180003D072 /* ViewModel */,
 				8708FE5D2C3475080003D072 /* Model */,
 				87BFAE432C21CF7E0049C8A5 /* evChargerApp.swift */,
 				87BFAE492C21CF7F0049C8A5 /* Assets.xcassets */,
@@ -218,14 +204,12 @@
 			files = (
 				87E3DEA02C330E38004D0139 /* User.swift in Sources */,
 				87D62DAF2C347B2B004EA466 /* UserListView.swift in Sources */,
-				87E3DEA42C330F6F004D0139 /* AdminViewModel.swift in Sources */,
 				87D62DA82C347574004EA466 /* Charger.swift in Sources */,
 				87D62DAD2C347B08004EA466 /* ChargerListView.swift in Sources */,
 				87BFAE442C21CF7E0049C8A5 /* evChargerApp.swift in Sources */,
 				87D5F5042C371F1B001E9227 /* LogInView.swift in Sources */,
 				87E3DEA82C332083004D0139 /* SignUpView.swift in Sources */,
 				87E830092C3AC23200F927A3 /* BookChargingView.swift in Sources */,
-				87E3DEA62C330F9A004D0139 /* CarOwnerViewModel.swift in Sources */,
 				87E830052C3AB11000F927A3 /* MainDashboardView.swift in Sources */,
 				87E830072C3ABBA800F927A3 /* HaversineFormula.swift in Sources */,
 				87D62DB12C347B3F004EA466 /* ChargerDetailView.swift in Sources */,
