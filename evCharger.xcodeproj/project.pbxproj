@@ -22,6 +22,8 @@
 		87E3DEA62C330F9A004D0139 /* CarOwnerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E3DEA52C330F9A004D0139 /* CarOwnerViewModel.swift */; };
 		87E3DEA82C332083004D0139 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E3DEA72C332083004D0139 /* SignUpView.swift */; };
 		87E830052C3AB11000F927A3 /* MainDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E830042C3AB11000F927A3 /* MainDashboardView.swift */; };
+		87E830072C3ABBA800F927A3 /* HaversineFormula.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E830062C3ABBA800F927A3 /* HaversineFormula.swift */; };
+		87E830092C3AC23200F927A3 /* BookChargingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E830082C3AC23200F927A3 /* BookChargingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 		87E3DEA52C330F9A004D0139 /* CarOwnerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarOwnerViewModel.swift; sourceTree = "<group>"; };
 		87E3DEA72C332083004D0139 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		87E830042C3AB11000F927A3 /* MainDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDashboardView.swift; sourceTree = "<group>"; };
+		87E830062C3ABBA800F927A3 /* HaversineFormula.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HaversineFormula.swift; sourceTree = "<group>"; };
+		87E830082C3AC23200F927A3 /* BookChargingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookChargingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,7 @@
 			children = (
 				87D62DA72C347574004EA466 /* Charger.swift */,
 				87E3DE9F2C330E38004D0139 /* User.swift */,
+				87E830062C3ABBA800F927A3 /* HaversineFormula.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -136,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				87E830042C3AB11000F927A3 /* MainDashboardView.swift */,
+				87E830082C3AC23200F927A3 /* BookChargingView.swift */,
 			);
 			path = UserViews;
 			sourceTree = "<group>";
@@ -218,8 +224,10 @@
 				87BFAE442C21CF7E0049C8A5 /* evChargerApp.swift in Sources */,
 				87D5F5042C371F1B001E9227 /* LogInView.swift in Sources */,
 				87E3DEA82C332083004D0139 /* SignUpView.swift in Sources */,
+				87E830092C3AC23200F927A3 /* BookChargingView.swift in Sources */,
 				87E3DEA62C330F9A004D0139 /* CarOwnerViewModel.swift in Sources */,
 				87E830052C3AB11000F927A3 /* MainDashboardView.swift in Sources */,
+				87E830072C3ABBA800F927A3 /* HaversineFormula.swift in Sources */,
 				87D62DB12C347B3F004EA466 /* ChargerDetailView.swift in Sources */,
 				87D62DAB2C347AE1004EA466 /* AdminDashboardView.swift in Sources */,
 				87D62DB32C347B4F004EA466 /* UserDetailView.swift in Sources */,

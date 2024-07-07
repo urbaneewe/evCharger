@@ -15,12 +15,16 @@ final class Charger: Identifiable {
     var lat: Double
     var lng: Double
     var availability: Bool
-
-    init(id: UUID = UUID(), type: String, lat: Double, lng: Double, availability: Bool) {
+    var price: Double
+    var chargingTime: Double
+    
+    init(id: UUID = UUID(), type: String, lat: Double, lng: Double, availability: Bool, price: Double, chargingTime: Double) {
         self.id = id
         self.type = type
         self.lat = lat
         self.lng = lng
         self.availability = availability
+        self.price = price
+        self.chargingTime = chargingTime
     }
 }

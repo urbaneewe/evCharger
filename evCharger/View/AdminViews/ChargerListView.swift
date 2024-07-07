@@ -30,7 +30,9 @@ struct ChargerListView: View {
             type: "",
             lat: 0,
             lng: 0,
-            availability: true
+            availability: true,
+            price: 0,
+            chargingTime: 0
         ))) {
             Text("Add")
         })

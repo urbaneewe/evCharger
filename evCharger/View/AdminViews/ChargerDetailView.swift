@@ -30,6 +30,15 @@ struct ChargerDetailView: View {
                     Text("Available")
                 }
             }
+
+            Section(header: Text("Price")) {
+                TextField("Price", value: $charger.price, format: .number)
+            }
+
+            Section(header: Text("Charging time")) {
+                TextField("Charging time", value: $charger.chargingTime, format: .number)
+            }
+
         }
         .navigationTitle("Charger Details")
         .navigationBarItems(trailing: Button("Save") {
@@ -37,7 +46,9 @@ struct ChargerDetailView: View {
                 type: charger.type,
                 lat: charger.lat,
                 lng: charger.lng,
-                availability: charger.availability
+                availability: charger.availability,
+                price: charger.price,
+                chargingTime: charger.chargingTime
             )
 
             context.insert(newCharger)
@@ -47,6 +58,6 @@ struct ChargerDetailView: View {
 
 struct ChargerDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        ChargerDetailView(charger: Charger(type: "Type 1", lat: 0.0, lng: 0.0, availability: true))
+        ChargerDetailView(charger: Charger(type: "Type 1", lat: 0.0, lng: 0.0, availability: true, price: 0.0, chargingTime: 0.0))
     }
 }
