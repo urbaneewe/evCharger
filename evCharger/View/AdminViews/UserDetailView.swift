@@ -31,7 +31,7 @@ struct UserDetailView: View {
 
             Section(header: Text("Admin")) {
                 Toggle(isOn: $user.isAdmin) {
-                    Text("Is Admin")
+                    Text("Admin")
                 }
             }
         }
